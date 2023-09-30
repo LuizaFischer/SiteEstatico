@@ -1,0 +1,146 @@
+body{
+    background-image: url(./2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FF6B1A;
+    width: 100vw;
+    height: 100vh;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.cadastro, .login{
+    background-color: rgb(255, 254, 255, 0.993);
+    width: 300px;
+    margin-left: 39%;
+    border-width: 2px;
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+}
+.login{
+    height: 420px;
+}
+input{
+    width: 220px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: #006663;
+    background-color: rgb(221, 218, 218);
+    padding-left: 15px;
+    font-style: italic;
+    
+}
+.p{ 
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3{
+    margin-bottom: 0;
+}
+.div1{
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 410px;
+    border-width: 2px;
+    border-radius: 15px;
+    height: 280px;
+    margin-left: 35.4%;
+    margin-top: 5%;
+    z-index: -2;
+    position: absolute;
+}
+.div2{
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 350px;
+    border-width: 2px;
+    border-radius: 15px;
+    height: 340px;
+    margin-left: 37.3%;
+    margin-top: 3%;
+    z-index: -1;
+    position: absolute;
+}
+#cliqueaqui{
+    color: #FF6B1A;
+    font-size: 15px;
+    border:0px;
+}
+a:link {
+    color:#006663
+}
+a:visited {
+    color: #006663
+}
+.batman{
+    opacity: 0;
+    height: 100px;
+}
+.hobbin{
+    opacity: 0;
+    height: 60px;
+}
+
+.glow-on-hover {
+    width: 240px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background:#B33F00;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(105deg, #c64b09, #FF6B1A);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FF6B1A;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
